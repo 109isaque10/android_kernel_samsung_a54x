@@ -1,4 +1,3 @@
-
 #!/bin/bash
 DIR=`readlink -f .`
 PARENT_DIR=`readlink -f ${DIR}/..`
@@ -71,7 +70,7 @@ anykernel3() {
 	if [ -d $AK3_DIR ]; then
 		cd $AK3_DIR
 		git reset HEAD --hard
-		rm -fr Squeak* Image
+		rm -fr Squeak* Image*
 		cd $DIR
 	else 
 	    git clone --branch a54x https://github.com/Vaz15k/AnyKernel3.git $AK3_DIR
