@@ -132,7 +132,7 @@ DEFCONFIG="a54x_defconfig"
 export PLATFORM_VERSION=14
 export TARGET_SOC=s5e8835
 export DEPMOD=depmod
-
+export OPENSSL_CONF=$BUILD_DIR/openssl.cnf
 export KBUILD_BUILD_USER="Vaz15K"
 
 # JOBS=2
