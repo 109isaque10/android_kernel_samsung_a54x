@@ -31,7 +31,7 @@ jobs:
       - name: Checkout DΛG branch
         uses: actions/checkout@v4
         with:
-          ref: 'DΛG'
+          ref: 'squeak'
 
       - name: Send Telegram Start Notification
         run: |
@@ -1729,7 +1729,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: /home/runner/AnyKernel3/*.zip
-          name: DΛG Kernels - ${{ env.DATE }}
+          name: squeak Kernels - ${{ env.DATE }}
           tag_name: "${{ env.DATE }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -1744,7 +1744,7 @@ jobs:
       - name: Checkout DΛG branch
         uses: actions/checkout@v4
         with:
-          ref: 'DΛG'
+          ref: 'squeak'
 
       - name: Set date
         run: echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
